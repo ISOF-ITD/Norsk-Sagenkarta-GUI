@@ -1,5 +1,5 @@
 export default {
-	localLibraryName: 'sagenkarta_library',
+	localLibraryName: 'norsk_sagenkarta_library',
 
 	requiredParams: {
 		type: 'arkiv,tryckt',

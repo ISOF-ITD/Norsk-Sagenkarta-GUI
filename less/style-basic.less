@@ -20,10 +20,8 @@
 @import "../ISOF-React-modules/less/minimal-scrollbar.less";
 @import "../ISOF-React-modules/less/tables.less";
 
-@import "../ISOF-React-modules/less/sitevision.less";
-
-@color-red: #a6192e;
-@color-red-lighter: #d4454c;
+@color-red: #2c2c2c;
+@color-red-lighter: #636363;
 @color-red-divider: #b62837;
 @color-gray: #edeff1;
 @color-gray-border: #d1d1d1;
@@ -34,17 +32,11 @@
 	zoom: 0.75;
 }
 
-// Sitevision hack, remove #Publiceringsdatum
-#Publiceringsdatum + span {
-	display: none;
-}
-.sv-column-6 {
-//    display: none !important;
-}
-
 html, body {
 	height: 100vh;
 	width: 100vw;
+
+	font-family: Arial, Helvetica, sans-serif;
 
 	overflow: hidden;
 
@@ -58,6 +50,11 @@ body {
 	margin: 0;
 
 	font-size: 1rem;
+
+	background-color: @color-gray-background;
+	background-image: url('../img/loader.gif');
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .text-small {
@@ -164,4 +161,46 @@ audio::-webkit-media-controls-enclosure {
 	a {
 		text-decoration: none !important;
 	}
+}
+
+#nfs-logo {
+	position: fixed;
+
+	top: 20px;
+	left: 20px;
+
+	z-index: 1100;
+}
+
+#isof-logo {
+	position: fixed;
+
+	right: 30px;
+	bottom: 30px;
+
+	z-index: 1100;
+
+	img {
+		max-width: 150px;
+	}
+}
+
+.map-wrapper {
+	.leaflet-control-container {
+		.leaflet-top {
+			top: 160px;
+		}
+	}
+}
+
+.map-viewmode-menu {
+	top: 301px !important;
+}
+
+.popup-wrapper .popup-content-wrapper .page-content .container-header {
+	background-image: none;
+}
+
+.local-library-wrapper {
+	left: 290px;
 }

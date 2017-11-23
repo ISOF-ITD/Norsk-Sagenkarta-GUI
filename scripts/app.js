@@ -20,6 +20,10 @@ if (!window.Promise) {
 
 // Initalisera stöd för flerspråkighet
 import Lang from './../ISOF-React-modules/lang/Lang';
+
+// Språk: norska
+Lang.setCurrentLang('no');
+
 window.Lang = Lang;
 window.l = Lang.get;
 
