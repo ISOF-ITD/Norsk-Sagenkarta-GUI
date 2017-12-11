@@ -21,12 +21,12 @@
 @import "../ISOF-React-modules/less/tables.less";
 
 @color-red: #2c2c2c;
-@color-red-lighter: #636363;
+@color-red-lighter: #bfbbaf;
 @color-red-divider: #b62837;
 @color-gray: #edeff1;
 @color-gray-border: #d1d1d1;
 @color-gray-background: #f5f5f5;
-@notification-background: #7d1b1f;
+@notification-background: #636363;
 
 @viewport {
 	zoom: 0.75;
@@ -170,6 +170,23 @@ audio::-webkit-media-controls-enclosure {
 	left: 20px;
 
 	z-index: 1100;
+
+	img {
+		width: 700px;
+		height: 63px;
+	}
+
+	.nfs-name {
+		margin-top: 10px;
+		padding: 10px 149px;
+
+		border-top: 1px solid #3838382e;
+
+		font-weight: bold;
+		font-size: 1.1rem;
+
+		pointer-events: none;
+	}
 }
 
 #isof-logo {
@@ -201,6 +218,35 @@ audio::-webkit-media-controls-enclosure {
 	background-image: none;
 }
 
+.overlay-container .overlay-header {
+	background-image: none !important;
+	background-color: @color-red;
+}
+
 .local-library-wrapper {
 	left: 290px;
+}
+
+.nordic-switch-wrapper {
+	a {
+		&.selected {
+			background-color: #ed1c24 !important;
+		}
+	}
+}
+
+.element-notification-message {
+	.message-container {
+		background: #ed1c24 !important;
+	}
+
+	.arrow {
+		&.arrow-above {
+			border-top-color: #ed1c24 !important;
+		}
+
+		&.arrow-under {
+			border-bottom-color: #ed1c24 !important;
+		}
+	}
 }

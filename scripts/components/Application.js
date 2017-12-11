@@ -215,8 +215,8 @@ export default class Application extends React.Component {
 					<SitevisionContent url={config.startPageUrl} disableScriptExecution={true} />
 					<div>
 						<hr className="margin-bottom-35"/>
-						<button className="button-primary margin-bottom-0" onClick={this.introOverlayCloseButtonClickHandler}>Stäng</button>
-						<label className="margin-top-10 margin-bottom-0 font-weight-normal u-pull-right"><input className="margin-bottom-0" onChange={function(event) {this.setState({neverShowIntro: event.currentTarget.checked})}.bind(this)} type="checkbox" /> Klicka här för att inte visa den rutan igen.</label>
+						<button className="button-primary margin-bottom-0" onClick={this.introOverlayCloseButtonClickHandler}>{l('Stäng')}</button>
+						<label className="margin-top-10 margin-bottom-0 font-weight-normal u-pull-right"><input className="margin-bottom-0" onChange={function(event) {this.setState({neverShowIntro: event.currentTarget.checked})}.bind(this)} type="checkbox" /> {l('Klicka här för att inte visa den rutan igen.')}</label>
 					</div>
 				</OverlayWindow>
 

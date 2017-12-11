@@ -204,9 +204,9 @@ export default class SearchBox extends React.Component {
 					{
 						this.state.searchValue != '' ?
 						(
-							this.state.searchField == 'record' ? 'Innehåll: ' :
-							this.state.searchField == 'person' ? 'Person: ' :
-							this.state.searchField == 'place' ? 'Ort: ' : ''
+							this.state.searchField == 'record' ? l('Innehåll')+': ' :
+							this.state.searchField == 'person' ? l('Person')+': ' :
+							this.state.searchField == 'place' ? l('Ort')+': ' : ''
 						) : l('Sök')
 					}
 					<strong>
@@ -225,29 +225,29 @@ export default class SearchBox extends React.Component {
 
 						<label>
 							<input type="radio" value="record" onChange={this.searchFieldChangeHandler} name="search-field" checked={this.state.searchField == 'record'} />
-							Innehåll
+							{l('Innehåll')}
 						</label>
 
 						<label>
 							<input type="radio" value="person" onChange={this.searchFieldChangeHandler} name="search-field" checked={this.state.searchField == 'person'} />
-							Person
+							{l('Person')}
 						</label>
 
 						<label>
 							<input type="radio" value="place" onChange={this.searchFieldChangeHandler} name="search-field" checked={this.state.searchField == 'place'} />
-							Ort
+							{l('Ort')}
 						</label>
 
 					</div>
 
-					<a className="advanced-button" onClick={this.toggleAdvanced}>Avancerad sökning</a>
+					<a className="advanced-button" onClick={this.toggleAdvanced}>{l('Avancerad sökning')}</a>
 
 					<div className="advanced-content">
 
 						<hr/>
 
 						<h4>Kategorier</h4>
-						<DropdownMenu label="Avgränsa till kategorier">
+						<DropdownMenu label={l('Avgränsa till kategorier')}>
 							<CategoryList multipleSelect="true" onChange={this.searchCategoriesChangeHandler} />
 						</DropdownMenu>
 
@@ -258,17 +258,17 @@ export default class SearchBox extends React.Component {
 						
 							<label>
 								<input type="radio" value="c" onChange={this.searchPersonRelationChangeHandler} name="search-person-relation" checked={this.state.searchPersonRelation == 'c'} />
-								Upptecknare
+								{l('Upptecknare')}
 							</label>
 
 							<label>
 								<input type="radio" value="i" onChange={this.searchPersonRelationChangeHandler} name="search-person-relation" checked={this.state.searchPersonRelation == 'i'} />
-								Meddelare
+								{l('Meddelare')}
 							</label>
 
 							<label>
 								<input type="radio" value="both" onChange={this.searchPersonRelationChangeHandler} name="search-person-relation" checked={this.state.searchPersonRelation == ''} />
-								Båda
+								{l('Båda')}
 							</label>
 
 						</div>
@@ -280,17 +280,17 @@ export default class SearchBox extends React.Component {
 						
 							<label>
 								<input type="radio" value="k" onChange={this.searchGenderChangeHandler} name="search-gender" checked={this.state.searchGender == 'k'} />
-								Kvinna
+								{l('Kvinna')}
 							</label>
 
 							<label>
 								<input type="radio" value="m" onChange={this.searchGenderChangeHandler} name="search-gender" checked={this.state.searchGender == 'm'} />
-								Man
+								{l('Man')}
 							</label>
 
 							<label>
 								<input type="radio" value="both" onChange={this.searchGenderChangeHandler} name="search-gender" checked={this.state.searchGender == ''} />
-								Båda
+								{l('Båda')}
 							</label>
 
 						</div>
