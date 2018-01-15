@@ -211,8 +211,8 @@ export default class Application extends React.Component {
 				<ImageOverlay />
 				<FeedbackOverlay />
 				<PopupNotificationMessage />
-				<OverlayWindow title="Velkommen till sägenkartan">
-					<SitevisionContent url={config.startPageUrl} disableScriptExecution={true} />
+				<OverlayWindow title="Velkommen til sagnkartet">
+					<SitevisionContent htmlContent={document.getElementById('welcomeText').innerHTML} disableScriptExecution={true} />
 					<div>
 						<hr className="margin-bottom-35"/>
 						<button className="button-primary margin-bottom-0" onClick={this.introOverlayCloseButtonClickHandler}>{l('Stäng')}</button>

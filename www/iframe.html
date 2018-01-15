@@ -1,0 +1,34 @@
+
+<!-- Sitevision template -->
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Norska sägenkartan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<style type="text/css">
+	body {
+		width: 100%;
+		height: 100%;
+	}
+	</style>
+</head>
+
+<body>
+<iframe id="sg_iframe" width="100%" height="100%" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; border: 0;" src="index.html" ></iframe>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+<script type="text/javascript">
+
+var iframe = document.getElementById('sg_iframe');
+iframe.contentWindow.location.hash = window.location.hash;
+window.location.hash = '';
+
+</script>
+
+</body>
+
+</html>

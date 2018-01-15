@@ -3,7 +3,7 @@ export default {
 
 	requiredParams: {
 		type: 'arkiv,tryckt',
-		only_categories: 'true'
+		only_categories: 'true',
 	},
 
 	siteOptions: {
@@ -12,13 +12,18 @@ export default {
 
 	country: 'norway',
 
+	siteOptions: {
+		// Dölja kontakt knapp i PopupWindow
+		hideContactButton: true
+	},
+
 	startPageUrl: '',
 
 	imageUrl: 'http://www4.sprakochfolkminnen.se/Folkminnen/Svenska_sagor_filer/',
 	audioUrl: 'http://www4.sprakochfolkminnen.se/Folkminnen/Svenska_sagor_filer/inspelningar/',
 
-	appUrl: 'http://www4.sprakochfolkminnen.se/sagner/',
-	siteUrl: 'http://www.sprakochfolkminnen.se/om-oss/kartor/sagenkartan.html',
+	appUrl: 'http://www4.sprakochfolkminnen.se/sagner/norsk/',
+	siteUrl: 'http://www4.sprakochfolkminnen.se/sagner/norsk/iframe.html',
 
 	apiUrl: 'http://frigg.sprakochfolkminnen.se/sagendatabas/api/es/',
 	restApiUrl: 'http://frigg.sprakochfolkminnen.se/sagendatabas/api/'

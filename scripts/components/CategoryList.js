@@ -71,10 +71,10 @@ export default class CategoryMenu extends React.Component {
 	render() {
 		var items = categories.categories.map(function(item, index) {
 			if (this.props.multipleSelect) {
-				return <label key={index} data-index={index} className="item"><input value={item.letter} onChange={this.selectionChangeHandler} type="checkbox"/>{item.label}</label>;
+				return <label key={index} data-index={index} className="item"><input value={item.letter} onChange={this.selectionChangeHandler} type="checkbox"/>{item.label_no}</label>;
 			}
 			else {
-				return <a key={index} data-index={index} className={'item'+(item.letter == this.state.selectedCategory ? ' selected' : '')} onClick={this.itemClickHandler}>{item.label}</a>;
+				return <a key={index} data-index={index} className={'item'+(item.letter == this.state.selectedCategory ? ' selected' : '')} onClick={this.itemClickHandler}>{item.label_no}</a>;
 			}
 		}.bind(this));
 
