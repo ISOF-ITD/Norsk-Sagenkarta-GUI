@@ -1,5 +1,3 @@
-
-<!-- Sitevision template -->
 <!DOCTYPE html>
 <html lang="sv">
 
@@ -17,17 +15,34 @@
 </head>
 
 <body>
-<iframe id="sg_iframe" width="100%" height="100%" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; border: 0;" src="index.html" ></iframe>
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-
+<iframe height="100%" id="sg_iframe" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; border: 0;" width="100%"></iframe>
 <script type="text/javascript">
 
-var iframe = document.getElementById('sg_iframe');
-iframe.contentWindow.location.hash = window.location.hash;
-window.location.hash = '';
+document.addEventListener("DOMContentLoaded", function() {
+	setTimeout(function() {
+		var iframe = document.getElementById('sg_iframe');
+
+		iframe.src = 'http://www4.sprakochfolkminnen.se/sagner/norsk/'+window.location.hash;
+//		iframe.contentWindow.location.hash = window.location.hash;
+		window.location.hash = '';
+	}, 500)
+});
 
 </script>
+
+<style type="text/css">
+
+/* Döljer allt på sidan... */
+* {
+   visibility: hidden;
+}
+
+/* ...men visar bara iframe objektet */
+iframe#sg_iframe {
+   visibility: visible !important;
+}
+
+</style>
 
 </body>
 

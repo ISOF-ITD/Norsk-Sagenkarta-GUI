@@ -23,7 +23,7 @@ export default {
 	audioUrl: 'http://www4.sprakochfolkminnen.se/Folkminnen/Svenska_sagor_filer/inspelningar/',
 
 	appUrl: 'http://www4.sprakochfolkminnen.se/sagner/norsk/',
-	siteUrl: 'http://www4.sprakochfolkminnen.se/sagner/norsk/iframe.html',
+	siteUrl: 'http://www.hf.uio.no/ikos/tjenester/kunnskap/samlinger/norsk-folkeminnesamling/Sagnkart/sagnkart.html',
 
 	apiUrl: 'http://frigg.sprakochfolkminnen.se/sagendatabas/api/es/',
 	restApiUrl: 'http://frigg.sprakochfolkminnen.se/sagendatabas/api/'
