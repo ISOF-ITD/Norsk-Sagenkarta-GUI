@@ -128,7 +128,7 @@ export default class SearchBox extends React.Component {
 					this.props.onSizeChange(this.state)
 				}
 			}.bind(this));
-			
+
 			this.refs.searchInput.focus();
 		}
 
@@ -192,14 +192,14 @@ export default class SearchBox extends React.Component {
 
 	render() {
 		return (
-			<div ref="container" 
-				onClick={this.searchBoxClickHandler} 
+			<div ref="container"
+				onClick={this.searchBoxClickHandler}
 				className={'search-box map-floating-control'+(this.state.expanded ? ' expanded' : '')+(this.state.advanced ? ' advanced' : '')} >
-				<input ref="searchInput" type="text" 
-					value={this.state.searchValue} 
-					onChange={this.searchValueChangeHandler} 
+				<input ref="searchInput" type="text"
+					value={this.state.searchValue}
+					onChange={this.searchValueChangeHandler}
 					onKeyPress={this.inputKeyPressHandler} />
-				
+
 				<div className="search-label">
 					{
 						this.state.searchValue != '' ?
@@ -255,7 +255,7 @@ export default class SearchBox extends React.Component {
 
 						<h4>Roll</h4>
 						<div className="radio-group">
-						
+
 							<label>
 								<input type="radio" value="c" onChange={this.searchPersonRelationChangeHandler} name="search-person-relation" checked={this.state.searchPersonRelation == 'c'} />
 								{l('Upptecknare')}
@@ -275,9 +275,9 @@ export default class SearchBox extends React.Component {
 
 						<hr/>
 
-						<h4>Kön</h4>
+						<h4>{l('Kön')}</h4>
 						<div className="radio-group">
-						
+
 							<label>
 								<input type="radio" value="k" onChange={this.searchGenderChangeHandler} name="search-gender" checked={this.state.searchGender == 'k'} />
 								{l('Kvinna')}
