@@ -19,14 +19,14 @@ export default {
 
 	startPageUrl: '',
 
-	imageUrl: 'https://www4.sprakochfolkminnen.se/Folkminnen/Svenska_sagor_filer/',
-	audioUrl: 'https://www4.sprakochfolkminnen.se/Folkminnen/Svenska_sagor_filer/inspelningar/',
+	imageUrl: 'https://www4.isof.se/Folkminnen/Svenska_sagor_filer/',
+	audioUrl: 'https://www4.isof.se/Folkminnen/Svenska_sagor_filer/inspelningar/',
 
-	appUrl: 'https://www4.sprakochfolkminnen.se/sagner/norsk/',
+	appUrl: 'https://frigg.isof.se/static/js-apps/sagenkarta-norsk/',
 	siteUrl: 'https://www.hf.uio.no/ikos/tjenester/kunnskap/samlinger/norsk-folkeminnesamling/Sagnkart/sagnkart.html',
 
-	apiUrl: 'https://frigg.sprakochfolkminnen.se/sagendatabas/api/es/',
-	restApiUrl: 'https://frigg.sprakochfolkminnen.se/sagendatabas/api/'
+	apiUrl: 'https://frigg.isof.se/sagendatabas/api/es/',
+	restApiUrl: 'https://frigg.isof.se/sagendatabas/api/'
 //	apiUrl: 'http://uuc-isof004-t.its.uu.se/sagendatabas/api/es/'
 //	apiUrl: 'http://uuc-isof004-t.its.uu.se/sagendatabas/api/'
 //	apiUrl: 'http://localhost:8000/sagenkarta/'

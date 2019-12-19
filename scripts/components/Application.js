@@ -186,6 +186,7 @@ export default class Application extends React.Component {
 	render() {
 		// Innehåll av RoutePopupWindow, kommer från application route i app.js
 		var popup = this.props.popup;
+		console.log('application.js render');
 
 		return (
 			<div className={'app-container'+(this.state.popupVisible ? ' has-overlay' : '')}>
