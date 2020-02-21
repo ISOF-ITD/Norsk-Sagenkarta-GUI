@@ -3,7 +3,7 @@ export default {
 
 	requiredParams: {
 		type: 'arkiv,tryckt',
-		only_categories: 'true',
+		categorytypes: 'sägner',
 	},
 
 	siteOptions: {
